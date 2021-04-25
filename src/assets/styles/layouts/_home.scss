@@ -1,8 +1,14 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  padding: 30px;
+  box-sizing: border-box;
+}
+
+body {
+  // margin: 0;
+  // padding: 30px;
   font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
+  // background-color: $uoc-bg;
   color: $uoc-corporate;
 }
 
@@ -18,4 +24,49 @@ body {
   font-size: 36px;
   font-weight: 700;
   color: $uoc-corporate;
+}
+
+/*------------------------------------*\
+  # BLOQUE CONTACTO
+\*------------------------------------*/
+
+.main {
+  padding: 2rem 5rem;
+  min-height: 100vh;
+  // background-color: #2d2e2e;
+  @include for-tablet-down {
+    padding: 1rem;
+  }
+}
+
+.main__title {
+  color: white;
+  color: black;
+}
+
+.main__required {
+  text-align: right;
+
+  .main__abbr {
+    text-decoration: none;
+  }
+}
+
+.form {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 2rem;
+  background-color: #ffffff;
+  @include for-phone {
+    padding: 1rem;
+  }
+}
+
+.button {
+  display: block;
+  width: 200px;
+  float: right;
+  @include for-tablet-down {
+    width: 100%;
+  }
 }

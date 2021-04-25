@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <title>Contacto</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav"></nav>
+        </header>
+        <main class="main container">
+            <div class="container">
+                <h1 class="main__title text-center pt-2">Contáctanos</h1>
+                <p class="main__text text-center mt-3">
+                    Para cualquier consulta no dudes en ponerte en contacto con
+                    nosotros <i class="far fa-grin-beam"></i>
+                </p>
+                <p class="main__required fst-italic">
+                    Los campos señalados con
+                    <abbr class="main__abbr" title="Campo obligatorio">*</abbr>
+                    son obligatorios.
+                </p>
+                <form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    class="form row g-3 needs-validation mt-4"
+                    novalidate
+                >
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div class="col-md-6">
+                        <label for="name" class="form-label"
+                            >Nombre (<abbr class="main__abbr">*</abbr>)</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            name="name"
+                            placeholder="Nombre"
+                            required
+                        />
+                        <!-- <div class="valid-feedback">Looks good!</div> -->
+                        <div class="invalid-feedback">
+                            Este campo es obligatorio
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="email" class="form-label"
+                            >Email (<abbr class="main__abbr">*</abbr>)</label
+                        >
+                        <div class="input-group has-validation">
+                            <span
+                                class="input-group-text"
+                                id="inputGroupPrepend"
+                                >@</span
+                            >
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                placeholder="Email"
+                                required
+                            />
+                            <div class="invalid-feedback">
+                                Este campo es obligatorio
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="subject" class="form-label"
+                            >Asunto (<abbr class="main__abbr">*</abbr>)</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="subject"
+                            placeholder="Asunto"
+                            name="subject"
+                            required
+                        />
+                        <div class="invalid-feedback">
+                            Este campo es obligatorio
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="message" class="form-label"
+                            >Mensaje (<abbr class="main__abbr">*</abbr>)</label
+                        >
+                        <textarea
+                            class="form-control"
+                            id="message"
+                            rows="5"
+                            name="message"
+                            placeholder="Escribe un mensaje"
+                            required
+                        ></textarea>
+                        <div class="invalid-feedback">
+                            Este campo es obligatorio
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <button
+                            class="button btn btn-primary text-uppercase fw-bold py-2 px-0"
+                            type="submit"
+                        >
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function () {
+                    "use strict";
+
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.querySelectorAll(".needs-validation");
+
+                    // Loop over them and prevent submission
+                    Array.prototype.slice.call(forms).forEach(function (form) {
+                        form.addEventListener(
+                            "submit",
+                            function (event) {
+                                if (!form.checkValidity()) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+
+                                form.classList.add("was-validated");
+                            },
+                            false
+                        );
+                    });
+                })();
+            </script>
+        </main>
+        <footer class="footer"></footer>
+    </body>
+</html>
+
+<!-- <form action="form">
+                <ul class="form__list">
+                    <li class="form__item">
+                        <label for="name">Nombre (*)</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            title="Este campo es obligatorio"
+                            required
+                        />
+                    </li>
+                    <li class="form__item">
+                        <label for="email">Email (*)</label>
+                        <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            title="Este campo es obligatorio"
+                            required
+                        />
+                    </li>
+                    <li class="form__item">
+                        <label for="subject">Asunto (*)</label>
+                        <input
+                            type="text"
+                            name="subject"
+                            id="subject"
+                            title="Este campo es obligatorio"
+                            required
+                        />
+                    </li>
+                    <li class="form__item">
+                        <label for="message">Mensaje (*)</label>
+                        <textarea
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="5"
+                            title="Este campo es obligatorio"
+                        ></textarea>
+                    </li>
+                    <li class="form__item">
+                        <button type="submit">Enviar</button>
+                    </li>
+                </ul>
+            </form> -->
