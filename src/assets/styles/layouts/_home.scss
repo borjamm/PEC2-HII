@@ -275,6 +275,7 @@ body {
 }
 
 .navbread {
+  --bs-breadcrumb-divider: ">";
   &.navbread--padding-25 {
     padding: 0 25%;
   }
@@ -287,5 +288,3 @@ body {
 .breadcrumb-link {
   text-decoration: none;
 }
-
-// }
