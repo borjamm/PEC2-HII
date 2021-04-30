@@ -4,12 +4,21 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
         <!-- do not remove this line! -->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins&display=swap&family=Leckerli+One&display=swap"
             rel="stylesheet"
+        />
+        <link
+            rel="icon shortcut"
+            type="image/x-icon"
+            href="../src/assets/images/favicon.ico"
         />
         <title>Contacto</title>
     </head>
@@ -17,7 +26,11 @@
         <header class="header">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand py-0 m-0 fs-3 ms-2" href="/src/index.html">BMM</a>
+                    <a
+                        class="navbar-brand py-0 m-0 fs-3 ms-2"
+                        href="/src/index.html"
+                        >BMM</a
+                    >
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -29,19 +42,35 @@
                     >
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo03">
+                    <div
+                        class="collapse navbar-collapse flex-grow-0"
+                        id="navbarTogglerDemo03"
+                    >
                         <ul class="navbar-nav text-center mt-2 mt-sm-0">
                             <li class="nav-item mx-2 mx-md-4">
-                                <a class="nav-link" aria-current="page" href="/src/index.html">Inicio</a>
+                                <a
+                                    class="nav-link"
+                                    aria-current="page"
+                                    href="/src/index.html"
+                                    >Inicio</a
+                                >
                             </li>
                             <li class="nav-item mx-2 mx-md-4">
-                                <a class="nav-link" href="/src/members.html">Miembros</a>
+                                <a class="nav-link" href="/src/members.html"
+                                    >Miembros</a
+                                >
                             </li>
                             <li class="nav-item mx-2 mx-md-4">
-                                <a class="nav-link" href="/src/blog.html">Blog</a>
+                                <a class="nav-link" href="/src/blog.html"
+                                    >Blog</a
+                                >
                             </li>
                             <li class="nav-item mx-2 mx-md-4">
-                                <a class="nav-link active" href="/src/contact.html">Contacto</a>
+                                <a
+                                    class="nav-link active"
+                                    href="/src/contact.html"
+                                    >Contacto</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -49,23 +78,34 @@
             </nav>
         </header>
         <main class="main">
-            <nav class="nav-breadcrumb nav-breadcrumb--margin-left" aria-label="breadcrumb">
+            <nav
+                class="nav-breadcrumb nav-breadcrumb--margin-left"
+                aria-label="breadcrumb"
+            >
                 <ol class="breadcrumb breadcrumb--justify-content">
                     <li class="breadcrumb-item">
                         <a class="breadcrumb-link" href="index.html">Inicio</a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        Contacto
+                    </li>
                 </ol>
             </nav>
-            <div class="main__container main__container--padding-left-right">
-                <h1 class="main__title main__title--text-align main__title--margin-top-bottom">Contáctanos</h1>
+            <div class="main__container main__container--padding-size">
+                <h1
+                    class="main__title main__title--text-align main__title--margin-top-bottom main__title--line-bottom"
+                >
+                    Contáctanos
+                </h1>
                 <p class="main__text">
-                    Para cualquier consulta no dudes en ponerte en contacto con nosotros
-                    <i class="emoji fas fa-grin-beam"></i>
+                    Para cualquier consulta no dudes en ponerte en contacto con
+                    nosotros
+                    <i class="emoji far fa-grin-beam"></i>
                 </p>
                 <p class="main__required">
-                    Los campos señalados con <abbr class="main__abbr" title="Campo obligatorio">*</abbr> son
-                    obligatorios.
+                    Los campos señalados con
+                    <abbr class="main__abbr" title="Campo obligatorio">*</abbr>
+                    son obligatorios.
                 </p>
                 <form
                     name="contact"
@@ -77,15 +117,32 @@
                 >
                     <input type="hidden" name="form-name" value="contact" />
                     <div class="col-md-6">
-                        <label for="name" class="form-label">Nombre (<abbr class="main__abbr">*</abbr>)</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required />
-                        <div class="invalid-feedback">Este campo es obligatorio</div>
+                        <label for="name" class="form-label"
+                            >Nombre (<abbr class="main__abbr">*</abbr>)</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            name="name"
+                            placeholder="Nombre"
+                            required
+                        />
+                        <div class="invalid-feedback">
+                            Este campo es obligatorio
+                        </div>
                     </div>
 
                     <div class="col-md-6">
-                        <label for="email" class="form-label">Email (<abbr class="main__abbr">*</abbr>)</label>
+                        <label for="email" class="form-label"
+                            >Email (<abbr class="main__abbr">*</abbr>)</label
+                        >
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <span
+                                class="input-group-text"
+                                id="inputGroupPrepend"
+                                >@</span
+                            >
                             <input
                                 type="email"
                                 class="form-control"
@@ -94,12 +151,16 @@
                                 placeholder="Email"
                                 required
                             />
-                            <div class="invalid-feedback">Este campo es obligatorio</div>
+                            <div class="invalid-feedback">
+                                Este campo es obligatorio
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-md-12">
-                        <label for="subject" class="form-label">Asunto (<abbr class="main__abbr">*</abbr>)</label>
+                        <label for="subject" class="form-label"
+                            >Asunto (<abbr class="main__abbr">*</abbr>)</label
+                        >
                         <input
                             type="text"
                             class="form-control"
@@ -108,11 +169,15 @@
                             name="subject"
                             required
                         />
-                        <div class="invalid-feedback">Este campo es obligatorio</div>
+                        <div class="invalid-feedback">
+                            Este campo es obligatorio
+                        </div>
                     </div>
 
                     <div class="col-md-12">
-                        <label for="message" class="form-label">Mensaje (<abbr class="main__abbr">*</abbr>)</label>
+                        <label for="message" class="form-label"
+                            >Mensaje (<abbr class="main__abbr">*</abbr>)</label
+                        >
                         <textarea
                             class="form-control"
                             id="message"
@@ -121,7 +186,9 @@
                             placeholder="Escribe un mensaje"
                             required
                         ></textarea>
-                        <div class="invalid-feedback">Este campo es obligatorio</div>
+                        <div class="invalid-feedback">
+                            Este campo es obligatorio
+                        </div>
                     </div>
 
                     <div class="col-md-6 col-sm-12">
@@ -129,7 +196,10 @@
                     </div>
 
                     <div class="col-md-6 col-sm-12">
-                        <button class="button btn btn-primary text-uppercase fw-bold py-2 px-0" type="submit">
+                        <button
+                            class="button btn btn-primary text-uppercase fw-bold py-2 px-0"
+                            type="submit"
+                        >
                             Enviar
                         </button>
                     </div>
@@ -138,35 +208,70 @@
         </main>
         <footer class="footer">
             <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid justify-content-between text-center">
+                <div
+                    class="container-fluid justify-content-between text-center"
+                >
                     <div class="col-md-2 col-12 my-2 my-sm-0">
-                        <a class="navbar-brand pb-0 me-0 fs-3 ms-2" href="src/index">BMM</a>
+                        <a
+                            class="navbar-brand pb-0 me-0 fs-3 ms-2"
+                            href="src/index"
+                            >BMM</a
+                        >
                     </div>
                     <div class="col-md-8 col-12 my-2 my-sm-0">
-                        <ul class="navbar-nav justify-content-center flex-sm-row align-items-center flex-wrap">
+                        <ul
+                            class="navbar-nav justify-content-center flex-sm-row align-items-center flex-wrap"
+                        >
                             <li class="nav-item mx-3 mx-xl-5 my-sm-2">
-                                <a class="nav-link" aria-current="page" href="/src/index.html">Inicio</a>
+                                <a
+                                    class="nav-link"
+                                    aria-current="page"
+                                    href="/src/index.html"
+                                    >Inicio</a
+                                >
                             </li>
                             <li class="nav-item mx-3 mx-xl-5 my-sm-2">
-                                <a class="nav-link" href="/src/members.html">Miembros</a>
+                                <a class="nav-link" href="/src/members.html"
+                                    >Miembros</a
+                                >
                             </li>
                             <li class="nav-item mx-3 mx-xl-5 my-sm-2">
-                                <a class="nav-link" href="/src/blog.html">Blog</a>
+                                <a class="nav-link" href="/src/blog.html"
+                                    >Blog</a
+                                >
                             </li>
                             <li class="nav-item mx-3 mx-xl-5 my-sm-2">
-                                <a class="nav-link active" href="/src/contact.html">Contacto</a>
+                                <a
+                                    class="nav-link active"
+                                    href="/src/contact.html"
+                                    >Contacto</a
+                                >
                             </li>
                         </ul>
                     </div>
 
-                    <div class="col-md-2 col-12 d-flex justify-content-center my-2 my-sm-0">
-                        <a class="mx-3 fs-4" href="#" target="_blank" rel="noopener noreferrer"
+                    <div
+                        class="col-md-2 col-12 d-flex justify-content-center my-2 my-sm-0"
+                    >
+                        <a
+                            class="mx-3 fs-4"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             ><i class="buttons fab fa-google-plus-g"></i
                         ></a>
-                        <a class="mx-3 fs-4" href="#" target="_blank" rel="noopener noreferrer"
+                        <a
+                            class="mx-3 fs-4"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             ><i class="buttons fab fa-facebook-f"></i
                         ></a>
-                        <a class="mx-3 fs-4" href="#" target="_blank" rel="noopener noreferrer"
+                        <a
+                            class="mx-3 fs-4"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             ><i class="buttons fab fa-twitter"></i
                         ></a>
                     </div>

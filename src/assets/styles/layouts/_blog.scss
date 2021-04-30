@@ -1,5 +1,5 @@
 /*------------------------------------*\
-  # BLOQUE BLOG
+  # BLOQUE BLOG (ARTÍCULO)
 \*------------------------------------*/
 
 .blog__header {
@@ -8,21 +8,18 @@
   align-items: center;
   flex-direction: column;
   height: 70vh;
-  background-image: url("../images/portada.jpg");
+  background-image: url("../images/concert.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.blog__title,
-.blog__author {
+.blog__title {
+  text-align: center;
   color: $color-white;
-  padding: 10px;
+  padding: 0.7rem;
   background-color: $color-black;
-}
-
-.blog__author {
-  margin-top: 2rem;
+  margin: 0 1rem;
 }
 
 .blog__subtitle,

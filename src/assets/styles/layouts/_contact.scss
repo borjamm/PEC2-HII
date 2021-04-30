@@ -7,14 +7,10 @@
   margin-top: 1rem;
 }
 
-.emoji {
-  font-size: 1.2rem;
-}
-
 .main__required {
   text-align: right;
-  padding-top: 1rem;
-  font-size: 0.9rem;
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
   @include for-phone {
     padding: 1rem;
     text-align: center;
@@ -24,11 +20,15 @@
   }
 }
 
+.emoji {
+  font-size: 1.2rem;
+}
+
 .form {
   border-radius: 5px;
   background-color: $color-white;
   @include for-phone {
-    padding: 1rem;
+    padding: 1rem 0.5rem;
   }
 }
 
