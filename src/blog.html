@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="la">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,14 +8,14 @@
         <!-- do not remove this line! -->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins&display=swap&family=Leckerli+One&display=swap"
             rel="stylesheet"
         />
         <title>Blog</title>
     </head>
-    <body>
+    <body class="body">
         <header class="header">
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand py-0 m-0 fs-3 ms-2" href="/src/index.html">BMM</a>
                     <button
@@ -49,26 +49,29 @@
             </nav>
         </header>
 
-        <main class="main main--pt-0">
-            <article class="article">
-                <header class="article__header">
-                    <h1 class="article__title">Lorem ipsum dolor sit.</h1>
-                    <h6 class="article__author">Lorem, ipsum dolor.</h6>
+        <main class="main main--padding-top">
+            <article class="blog">
+                <header class="blog__header">
+                    <h1 class="blog__title">Lorem ipsum dolor sit.</h1>
+                    <h6 class="blog__author">Lorem, ipsum dolor.</h6>
                 </header>
-
-                <section class="article__section">
-                    <nav class="navbread navbread--padding-25" aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item">
-                                <a class="breadcrumb-link" href="index.html">Inicio</a>
-                            </li>
-                            <li class="breadcrumb-item active" aria-current="page">Blog</li>
-                        </ol>
-                    </nav>
-                    <h2 class="article__subtitle">
+                <nav
+                    class="nav-breadcrumb nav-breadcrumb--padding-left-right nav-breadcrumb--margin-top"
+                    aria-label="breadcrumb"
+                >
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a class="breadcrumb-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                    </ol>
+                </nav>
+                <section class="blog__section">
+                    <h2 class="blog__subtitle">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ut!
                     </h2>
-                    <p class="article__text">
+
+                    <p class="blog__text">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi mollitia nulla aut dicta
                         porro ex error, commodi, totam officiis doloribus quidem, omnis velit labore! Ut fugiat sunt
                         porro qui quis similique rerum quibusdam quas, iste, alias temporibus fuga eaque possimus omnis
@@ -78,26 +81,26 @@
                         sunt temporibus quas nobis corporis vero vitae dolor dolore laudantium, possimus praesentium
                         harum, fugiat, eos amet ullam maxime non nam? Voluptas, accusamus excepturi.
                     </p>
-                    <ul class="article__list">
-                        <li class="article__item">
-                            <h3 class="article__item-name article__item--one">Item One</h3>
-                            <p class="article__item-description">
+                    <ul class="blog__list">
+                        <li class="blog__item">
+                            <h3 class="blog__item-name blog__item--one">Item One</h3>
+                            <p class="blog__item-description">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet
                                 consectetur adipisicing elit. Alias ab atque non tenetur ea quis, dicta facere veniam
                                 veritatis? Sint!
                             </p>
                         </li>
-                        <li class="article__item">
-                            <h3 class="article__item-name article__item--two">Item Two</h3>
-                            <p class="article__item-description">
+                        <li class="blog__item">
+                            <h3 class="blog__item-name blog__item--two">Item Two</h3>
+                            <p class="blog__item-description">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet,
                                 consectetur adipisicing elit. A asperiores adipisci autem nesciunt fugiat aut
                                 necessitatibus. Perspiciatis illo dolorum reiciendis!
                             </p>
                         </li>
-                        <li class="article__item">
-                            <h3 class="article__item-name article__item--three">Item Three</h3>
-                            <p class="article__item-description">
+                        <li class="blog__item">
+                            <h3 class="blog__item-name blog__item--three">Item Three</h3>
+                            <p class="blog__item-description">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit. Enim cum neque, ratione deserunt vero consequatur
                                 voluptate fugiat sunt asperiores nam?
@@ -105,12 +108,10 @@
                         </li>
                     </ul>
                 </section>
-                <section class="article__section">
-                    <div class="article__main">
-                        <h2 class="article__main-subtitle">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        </h2>
-                        <p class="article__main-text">
+                <section class="blog__section">
+                    <div class="blog__main">
+                        <h2 class="blog__main-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                        <p class="blog__main-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sit dolor rerum non dolore
                             eos impedit totam esse illo temporibus! Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Cumque mollitia praesentium eos, assumenda excepturi culpa sit dolore nam doloremque
@@ -118,19 +119,16 @@
                             consectetur adipisicing elit. Tempora, fugit!
                         </p>
                     </div>
-                    <div class="article__image">
-                        <img class="article__img" src="./assets/images/musical.jpg" alt="" />
+                    <div class="blog__image">
+                        <img class="blog__img" src="./assets/images/musical.jpg" alt="Imagen de blog" />
                     </div>
-                    <blockquote class="article__blockquote" cite="">
-                        <p class="article__blockquote-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi tenetur saepe fugit incidunt
+                    <blockquote class="blog__blockquote">
+                        <p class="blog__blockquote-text">
+                            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi tenetur saepe fugit incidunt
                             et labore aut, rerum voluptate! Architecto error dolorem itaque cum tempora rem, corrupti
                             ratione aut quaerat minus nostrum saepe dicta officia debitis non accusantium voluptate quia
                             delectus fugit repellat natus recusandae. Quibusdam nam repellat illum, incidunt libero ad,
-                            quas amet totam similique et, praesentium rem eos harum tenetur magni fugit. Perferendis,
-                            alias? Repellat dolores adipisci consectetur quod alias porro asperiores sed illo, veritatis
-                            quis nisi rem nesciunt exercitationem. Temporibus fugiat illum iure! A voluptas laboriosam
-                            quidem, similique ea fugiat aspernatur sint? Cum architecto quas quidem itaque voluptatem.
+                            quas amet totam similique et, praesentium rem eos harum tenetur magni fugit."
                         </p>
                     </blockquote>
                 </section>
@@ -138,7 +136,7 @@
         </main>
 
         <footer class="footer">
-            <nav class="navbar navbar-light bg-light">
+            <nav class="navbar navbar-dark bg-dark">
                 <div class="container-fluid justify-content-between text-center">
                     <div class="col-md-2 col-12 my-2 my-sm-0">
                         <a class="navbar-brand pb-0 me-0 fs-3 ms-2" href="src/index">BMM</a>
@@ -162,13 +160,13 @@
 
                     <div class="col-md-2 col-12 d-flex justify-content-center my-2 my-sm-0">
                         <a class="mx-3 fs-4" href="#" target="_blank" rel="noopener noreferrer"
-                            ><i class="fab fa-google-plus-g"></i
+                            ><i class="buttons fab fa-google-plus-g"></i
                         ></a>
                         <a class="mx-3 fs-4" href="#" target="_blank" rel="noopener noreferrer"
-                            ><i class="fab fa-facebook-f"></i
+                            ><i class="buttons fab fa-facebook-f"></i
                         ></a>
                         <a class="mx-3 fs-4" href="#" target="_blank" rel="noopener noreferrer"
-                            ><i class="fab fa-twitter"></i
+                            ><i class="buttons fab fa-twitter"></i
                         ></a>
                     </div>
                 </div>

@@ -1,17 +1,62 @@
 @use "sass:color";
 
-// $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-//   "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-//   "Segoe UI Symbol";
-// $font-family-serif: "Georgia", "Times New Roman", serif;
-
 $font-family-poppins: "Poppins", sans-serif;
 $font-family-alfa-slab-one: "Alfa Slab One", cursive;
+$font-family-leckerli-one: "Leckerli One", cursive;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+$color-primary: #36d8b7;
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: darken($color-primary, 10%);
+
+$color-secondary: #4fbc79;
+$color-secondary-light: lighten($color-secondary, 10%);
+
+$color-dark: #2d2e2e;
+$color-dark-light: lighten($color-dark, 50%);
+
+$color-black: #000000;
+$color-white: #ffffff;
+
+$color-black-light-opacity: color.scale($color-black, $lightness: 80%);
+
+$itemsList: "one" "1", "two" "2", "three" "3";
 
 $theme-colors: (
-  "primary": #ffa07a,
+  "primary": $color-primary-dark,
+  "dark": $color-dark,
 );
+
+$navbar-dark-color: $color-dark-light;
+$navbar-dark-active-color: $color-primary;
+$navbar-dark-hover-color: $color-white;
+// $navbar-link: #736bf3;
+$breadcrumb-active-color: $color-dark;
+// $breadcrumb-color: red;
+$breadcrumb-divider-color: $color-dark;
+
+// $font-family-poppins: "Poppins", sans-serif;
+// $font-family-leckerli-one: "Leckerli One", cursive;
+// $color-$color-black: #000000;
+// $color-white: #ffffff;
+// $color-warning: #e0a80d;
+// $color-dark: #2d2e2e;
+// $color-grey: lighten($color-dark, 50%);
+// $color-dark-light: darken($color-grey, 42%);
+// $color-dark-opacity: rgba(0, 0, 0, 0.8);
+// $color-dark-light-opacity: color.scale($color-$color-black, $lightness: 48%);
+// $percentages: 70, 75, 80, 85, 90, 95;
+
+// $color-primary: #caddfd;
+// $color-primary-light: lighten($color-primary, 10%);
+// $color-primary-dark: darken($color-primary, 10%);
+
+// $color-secondary: #3557dc;
+// $color-secondary-light: lighten($color-secondary, 10%);
+
+// $color-dark: #2d2e2e;
+// $color-dark-light: lighten($color-dark, 50%);
+
+// $color-black: #000000;
+// $color-white: #ffffff;
+
+// $color-black-light-opacity: color.scale($color-black, $lightness: 80%);

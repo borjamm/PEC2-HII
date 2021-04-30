@@ -8,14 +8,14 @@
         <!-- do not remove this line! -->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins&display=swap&family=Leckerli+One&display=swap"
             rel="stylesheet"
         />
         <title>Contacto</title>
     </head>
-    <body>
+    <body class="body">
         <header class="header">
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand py-0 m-0 fs-3 ms-2" href="/src/index.html">BMM</a>
                     <button
@@ -49,24 +49,23 @@
             </nav>
         </header>
         <main class="main">
-            <nav class="navbread navbread--margin-left" aria-label="breadcrumb">
-                <ol class="breadcrumb">
+            <nav class="nav-breadcrumb nav-breadcrumb--margin-left" aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb--justify-content">
                     <li class="breadcrumb-item">
                         <a class="breadcrumb-link" href="index.html">Inicio</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">Contacto</li>
                 </ol>
             </nav>
-            <div class="container">
-                <h1 class="main__title text-center pt-2">Contáctanos</h1>
-                <p class="main__text text-center mt-3">
+            <div class="main__container main__container--padding-left-right">
+                <h1 class="main__title main__title--text-align main__title--margin-top-bottom">Contáctanos</h1>
+                <p class="main__text">
                     Para cualquier consulta no dudes en ponerte en contacto con nosotros
-                    <i class="far fa-grin-beam"></i>
+                    <i class="emoji fas fa-grin-beam"></i>
                 </p>
-                <p class="main__required fst-italic">
-                    Los campos señalados con
-                    <abbr class="main__abbr" title="Campo obligatorio">*</abbr>
-                    son obligatorios.
+                <p class="main__required">
+                    Los campos señalados con <abbr class="main__abbr" title="Campo obligatorio">*</abbr> son
+                    obligatorios.
                 </p>
                 <form
                     name="contact"
@@ -80,7 +79,6 @@
                     <div class="col-md-6">
                         <label for="name" class="form-label">Nombre (<abbr class="main__abbr">*</abbr>)</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required />
-                        <!-- <div class="valid-feedback">Looks good!</div> -->
                         <div class="invalid-feedback">Este campo es obligatorio</div>
                     </div>
 
@@ -125,6 +123,7 @@
                         ></textarea>
                         <div class="invalid-feedback">Este campo es obligatorio</div>
                     </div>
+
                     <div class="col-md-6 col-sm-12">
                         <div data-netlify-recaptcha="true"></div>
                     </div>
@@ -138,7 +137,7 @@
             </div>
         </main>
         <footer class="footer">
-            <nav class="navbar navbar-light bg-light">
+            <nav class="navbar navbar-dark bg-dark">
                 <div class="container-fluid justify-content-between text-center">
                     <div class="col-md-2 col-12 my-2 my-sm-0">
                         <a class="navbar-brand pb-0 me-0 fs-3 ms-2" href="src/index">BMM</a>
@@ -162,13 +161,13 @@
 
                     <div class="col-md-2 col-12 d-flex justify-content-center my-2 my-sm-0">
                         <a class="mx-3 fs-4" href="#" target="_blank" rel="noopener noreferrer"
-                            ><i class="fab fa-google-plus-g"></i
+                            ><i class="buttons fab fa-google-plus-g"></i
                         ></a>
                         <a class="mx-3 fs-4" href="#" target="_blank" rel="noopener noreferrer"
-                            ><i class="fab fa-facebook-f"></i
+                            ><i class="buttons fab fa-facebook-f"></i
                         ></a>
                         <a class="mx-3 fs-4" href="#" target="_blank" rel="noopener noreferrer"
-                            ><i class="fab fa-twitter"></i
+                            ><i class="buttons fab fa-twitter"></i
                         ></a>
                     </div>
                 </div>

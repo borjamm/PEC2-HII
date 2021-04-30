@@ -1,0 +1,10 @@
+.footer {
+  border-top: 3px solid $color-black-light-opacity;
+}
+
+.buttons {
+  color: $color-dark-light;
+  &:hover {
+    color: $color-white;
+  }
+}

@@ -8,7 +8,6 @@
  */
 
 @import "variables";
-
 @import "mixins";
 
 /**
@@ -25,8 +24,13 @@
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
+@import "components/header";
+@import "components/footer";
 
 @import "layouts/home";
+@import "layouts/members";
+@import "layouts/blog";
+@import "layouts/contact";
 
 /**
  * Do NOT include anything else in this file!

@@ -1,0 +1,155 @@
+/*------------------------------------*\
+  # BLOQUE BLOG
+\*------------------------------------*/
+
+.blog__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+  background-image: url("../images/portada.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blog__title,
+.blog__author {
+  color: $color-white;
+  padding: 10px;
+  background-color: $color-black;
+}
+
+.blog__author {
+  margin-top: 2rem;
+}
+
+.blog__subtitle,
+.blog__text,
+.blog__section,
+.blog__blockquote {
+  margin: 2rem 0;
+}
+
+.blog__text,
+.blog__subtitle,
+.blog__main {
+  padding: 0 25%;
+  @include for-desktop-down {
+    padding: 0 10%;
+  }
+  @include for-phone {
+    padding: 0 5%;
+  }
+}
+
+.blog__blockquote {
+  border-left: 5px solid $color-black-light-opacity;
+  padding-left: 30px;
+  margin: 2rem 22%;
+  @include for-desktop-down {
+    margin: 2rem 12%;
+  }
+  @include for-phone {
+    margin: 2rem 5%;
+  }
+}
+
+.blog__blockquote-text {
+  padding: 0;
+}
+
+.blog__list {
+  margin: 1rem 25%;
+  padding: 2rem 0;
+  border-bottom: 1px solid $color-black-light-opacity;
+  border-top: 2px solid $color-black-light-opacity;
+  list-style-type: none;
+
+  @include for-desktop-down {
+    margin: 1rem 10%;
+  }
+  @include for-phone {
+    margin: 1rem 5%;
+  }
+}
+
+.blog__item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.blog__item-name {
+  padding: 0.5rem 3.5rem;
+  font-size: 1.2rem;
+}
+
+.blog__item-description {
+  padding: 0 3.5rem;
+  @include for-phone {
+    padding: 0 0 0 3.5rem;
+  }
+}
+
+@each $name, $value in $itemsList {
+  .blog__item--#{$name} {
+    &:before {
+      content: $value;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $color-black-light-opacity;
+      border-radius: 100%;
+    }
+  }
+}
+
+.blog__image {
+  padding: 0 10%;
+}
+
+.blog__img {
+  display: block;
+  height: auto;
+  max-height: 550px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  object-fit: cover;
+  object-position: center;
+  border-radius: 3px;
+}
+
+.blog__main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0 3rem 0;
+  justify-content: space-between;
+  @include for-desktop-down {
+    justify-content: center;
+  }
+}
+
+.blog__main-subtitle {
+  padding: 0;
+  flex-basis: 25%;
+
+  @include for-desktop-down {
+    flex-basis: 100%;
+  }
+}
+
+.blog__main-text {
+  padding: 0;
+  flex-basis: 60%;
+  @include for-desktop-down {
+    flex-basis: 100%;
+  }
+}
