@@ -90,7 +90,7 @@
 }
 
 @each $name, $value in $itemsList {
-  .blog__item--#{$name} {
+  .blog__item-name--#{$name} {
     &:before {
       content: $value;
       position: absolute;
